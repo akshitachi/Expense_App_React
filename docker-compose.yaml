@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  start_project:
+    build: ./start_app
+    container_name: start_project_c
+    ports:
+      - '3000:3000'
+    stdin_open: true
+    tty: true
